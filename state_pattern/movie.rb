@@ -16,15 +16,15 @@ class Movie
   end
 
   def price_code=(value)
-      @price_code = value
-      @price = case @price_code
-      when REGULAR
-        RegularPrice.new
-      when NEW_RELEASE 
-        NewReleasePrice.new
-      when CHILDRENS
-        ChildrensPrice.new
-      end
+    @price_code = value
+    @price = case @price_code
+             when REGULAR
+               RegularPrice.new
+             when NEW_RELEASE 
+               NewReleasePrice.new
+             when CHILDRENS
+               ChildrensPrice.new
+             end
   end
 
   def charge(days_rented)
