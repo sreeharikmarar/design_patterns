@@ -1,6 +1,3 @@
-require 'rubygems'
-require 'pry'
-
 require_relative "balls"
 require_relative "rules"
 require_relative "max_size_rule"

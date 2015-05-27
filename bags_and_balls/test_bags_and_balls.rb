@@ -1,6 +1,7 @@
 require_relative "bag"
 require_relative "ball"
 require_relative "color"
+
 require "test/unit"
 
 class TestBagsAndBalls < Test::Unit::TestCase
