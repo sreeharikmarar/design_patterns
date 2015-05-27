@@ -1,6 +1,3 @@
-require 'rubygems'
-require 'pry'
-
 class Measurement 
 
   attr_accessor :amount
