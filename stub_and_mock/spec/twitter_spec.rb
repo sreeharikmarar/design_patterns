@@ -39,14 +39,9 @@ end
 describe "Twitter controller verify Post method" do
    it "verify post method being called or not" do
       twitter = spy('twitter')
-      twitter_controller = spy('twitter_controller')
+      twitter_controller = TwitterController.new(twitter)
       
-      twitter = twitter.new
-      twitter.post("new post")
-      twitter_controller = twitter_controller.new(twitter)
       twitter_controller.post("new post")
-      
       expect(twitter).to have_received(:post).with("new post")
-      expect(twitter_controller).to have_received(:post).with("new post")
   end
 end
